@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"vadimcn.vscode-lldb",
+		"serayuzgur.crates",
+		"usernamehw.errorlens",
+		"tamasfe.even-better-toml",
+		"rust-lang.rust-analyzer",
+		"karunamurti.tera",
+	]
+}

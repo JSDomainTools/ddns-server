@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ddns : create a token</title>
+</head>
+
+<body>
+	<form method="post" action="/create">
+		<input name="domain" placeholder="domain" type="text" autocorrect="off" autocapitalize="off" spellcheck="false"
+			required>
+		<br><br>
+		<input name="secret" placeholder="secret" type="password" required>
+		<br><br>
+		<input value="Generate" type="submit">
+	</form>
+	{% if token %}
+	<p>{{ token }}</p>
+	{% endif %}
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+[default]
+address = "127.0.0.1"
+port = 80
+
+[default.token]
+# `openssl rand -base64 32`
+secret = ""
+
+[default.adguard]
+base_url = ""
+username = ""
+password = ""
+
+[default.shutdown]
+grace = 30
+mercy = 15

@@ -1,0 +1,11 @@
+[package]
+edition = "2021"
+name = "jsdt-ddns-server"
+version = "0.0.0"
+
+[dependencies]
+aes-gcm = "^0"
+base64 = "^0"
+reqwest = { version = "^0", features = ["json"] }
+rocket = "^0.5.0-rc.2"
+rocket_dyn_templates = { version = "^0.1.0-rc.2", features = ["tera"] }

@@ -1,0 +1,32 @@
+{
+	// VSCode
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+	"files.exclude": {
+		"**/target": true,
+		"**/Cargo.lock": true,
+	},
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"files.watcherExclude": {
+		"**/.git/**": true,
+		"**/target/**": true,
+	},
+	// Extensions
+	"crates.listPreReleases": true,
+	"evenBetterToml.formatter.alignComments": true,
+	"evenBetterToml.formatter.alignEntries": false,
+	"evenBetterToml.formatter.allowedBlankLines": 1,
+	"evenBetterToml.formatter.arrayAutoExpand": true,
+	"evenBetterToml.formatter.arrayTrailingComma": true,
+	"evenBetterToml.formatter.columnWidth": 80,
+	"evenBetterToml.formatter.reorderKeys": true,
+	"evenBetterToml.formatter.trailingNewline": true,
+	"rust-analyzer.imports.granularity.enforce": true,
+	"rust-analyzer.imports.granularity.group": "module",
+	"rust-analyzer.imports.group.enable": true,
+	"rust-analyzer.imports.merge.glob": false,
+	"rust-analyzer.imports.prefer.no.std": true,
+}
