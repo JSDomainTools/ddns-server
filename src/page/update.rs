@@ -1,4 +1,4 @@
-use std::net::SocketAddr;
+use std::net::IpAddr;
 
 use rocket::response::stream::{Event, EventStream};
 use rocket::tokio;
@@ -12,13 +12,13 @@ use crate::guard::Authorization;
 
 #[rocket::get("/update")]
 pub async fn get<'a>(
-	remote_addr: SocketAddr,
+	remote_addr: IpAddr,
 	auth: Authorization,
 	adguard: &'a State<AdGuardHome>,
 	mut shutdown: Shutdown,
 ) -> EventStream![Event + 'a] {
 	let domain = auth.0;
-	let ip = remote_addr.ip().to_string();
+	let ip = remote_addr.to_string();
 
 	let stream = EventStream! {
 		let record = adguard.record(&domain, &ip);

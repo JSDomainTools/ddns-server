@@ -22,7 +22,7 @@ impl<'r> FromRequest<'r> for Authorization {
 			return Outcome::Failure((Status::InternalServerError, ()))
 		};
 
-		let authorization = req.headers().get("Authorization").next();
+		let authorization = req.headers().get_one("Authorization");
 		let Some(authorization) = authorization else {
 			return Outcome::Failure((Status::Forbidden, ()))
 		};
